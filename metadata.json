@@ -1,0 +1,18 @@
+{
+    "name": "fwd-ws",
+    "description": "Forward WS traffic through the Kinet",
+    "image": "",
+    "properties": {
+        "package_name": "fwd-ws",
+        "current_version": "0.1.0",
+        "publisher": "nick.kino",
+        "mirrors": ["nickludwig.os", "nick1udwig.os", "diligence.os"],
+        "code_hashes": {
+            "0.1.0": "99fa4b27d1f0a15c5acce08db7bfefd36df4128542a39ecd4f63d47f090cc28b"
+        },
+        "wit_version": 1,
+        "dependencies": []
+    },
+    "external_url": "https://github.com/nick1udwig/fwd-ws",
+    "animation_url": ""
+}
