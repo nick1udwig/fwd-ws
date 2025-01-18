@@ -121,7 +121,7 @@ fn handle_http_server_request(
                 // Only forward if we have a partner
                 if let Some(ref partner) = state.partner {
                     Request::new()
-                        .target((partner, "fwd-ws", "fwd-ws", "template.os"))
+                        .target((partner, "fwd-ws", "fwd-ws", "nick.kino"))
                         .body(FwdWsRequest::Forward(String::from_utf8(blob.bytes)?))
                         .send()?;
                 }
@@ -307,7 +307,7 @@ fn handle_message(
         if let Some(blob) = get_blob() {
             if let Some(ref partner) = state.partner {
                 Request::new()
-                    .target((partner, "fwd-ws", "fwd-ws", "template.os"))
+                    .target((partner, "fwd-ws", "kibitz", "nick.kino"))
                     .body(FwdWsRequest::Forward(String::from_utf8(blob.bytes)?))
                     .send()?;
             }
